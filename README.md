@@ -1,2 +1,2 @@
 # hexos
-Simple operation system
+Simple operating system
