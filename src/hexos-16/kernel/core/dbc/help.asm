@@ -23,11 +23,5 @@ show_help:
     call print_string
     mov si, help_panic
     call print_string
-    mov si, help_ls
-    call print_string
-    mov si, help_touch
-    call print_string
-    mov si, help_rm
-    call print_string
     popa
     ret
