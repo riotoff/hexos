@@ -1,4 +1,4 @@
-; hexos/src/kernel/core/dbc/clear.asm
+; hexos/src/hexos-16/kernel/core/dbc/clear.asm
 
 clear_cmd db "clear", 0
 
