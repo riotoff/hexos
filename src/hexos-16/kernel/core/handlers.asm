@@ -72,7 +72,7 @@ process_command:
     popa
     ret
 
-welcome_msg db "HexOS v0.3", 0x0D, 0x0A, 0
+welcome_msg db "HexOS 16-bit", 0x0D, 0x0A, 0
 available_cmds db "Type 'help' for available commands", 0x0D, 0x0A, 0x0A, 0
 available_cmds2 db "Type 'help' for available commands", 0x0D, 0x0A, 0
 prompt db "# ", 0
