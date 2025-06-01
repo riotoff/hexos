@@ -1,4 +1,4 @@
-; hexos/src/kernel/core/handlers.asm
+; hexos/src/hexos-16/kernel/core/handlers.asm
 
 process_command:
     pusha
