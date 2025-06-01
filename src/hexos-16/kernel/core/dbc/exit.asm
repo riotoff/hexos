@@ -1,4 +1,4 @@
-; hexos/src/kernel/core/dbc/exit.asm
+; hexos/src/hexos-16/kernel/core/dbc/exit.asm
 
 exit_cmd db "exit", 0
 shutdown_msg db "Shutting down...", 0x0D, 0x0A, 0
