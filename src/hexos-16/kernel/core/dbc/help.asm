@@ -1,4 +1,4 @@
-; hexos/src/kernel/core/dbc/help.asm
+; hexos/src/hexos-16/kernel/core/dbc/help.asm
 
 help_cmd db "help", 0
 
@@ -8,9 +8,6 @@ help_exit db "  exit  - Shutdown the computer", 0x0D, 0x0A, 0
 help_help db "  help  - Show this help message", 0x0D, 0x0A, 0
 help_hexfetch db "  hexfetch - Show system info", 0x0D, 0x0A, 0
 help_panic db "  panic - Trigger kernel panic (debug)", 0x0D, 0x0A, 0
-help_ls db "  ls - Show list of files", 0x0D, 0x0A, 0
-help_touch db "  touch - Create file", 0x0D, 0x0A, 0
-help_rm db "  rm - Delete file", 0x0D, 0x0A, 0
 
 show_help:
     pusha
