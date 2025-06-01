@@ -1,0 +1,9 @@
+hexos
+=====
+Family of hex-like operating systems written on Netwide Assembly.
+
+source at src/
+documentation at docs/
+other files at storage/
+
+* thanks t.me/unknownguy228 for his Govno Core project sources. it helps me with creating my os.
