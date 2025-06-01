@@ -25,3 +25,5 @@ hexfetch:
     call print_string
     popa
     ret
+
+; Need to patch due to unknown host, cpu and mem...
