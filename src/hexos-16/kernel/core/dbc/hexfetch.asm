@@ -1,4 +1,4 @@
-; hexos/src/kernel/core/dbc/hexfetch.asm
+; hexos/src/hexos-16/kernel/core/dbc/hexfetch.asm
 
 hexfetch_cmd db "hexfetch", 0
 
