@@ -20,3 +20,4 @@ start:
 %include "src/hexos-16/kernel/core/drivers.asm"
 %include "src/hexos-16/kernel/core/handlers.asm"
 %include "src/hexos-16/kernel/core/include_dbc.asm"
+%include "src/hexos-16/kernel/core/fsys.asm"
