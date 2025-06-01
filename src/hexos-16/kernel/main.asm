@@ -20,4 +20,3 @@ start:
 %include "src/kernel/core/drivers.asm"
 %include "src/kernel/core/handlers.asm"
 %include "src/kernel/core/include_dbc.asm"
-%include "src/kernel/core/fsys.asm"
