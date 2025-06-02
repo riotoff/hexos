@@ -48,6 +48,18 @@ process_command:
     call strcmp
     jc .do_panic
 
+    mov di, touch_cmd
+    call strcmp
+    jc .do_touch
+    
+    mov di, ls_cmd
+    call strcmp
+    jc .do_ls
+    
+    mov di, rm_cmd
+    call strcmp
+    jc .do_rm
+
     mov si, unknown_cmd
     call print_string
     mov si, available_cmds2
@@ -68,6 +80,15 @@ process_command:
     jmp .done
 .do_panic:
     call kernel_panic
+.do_touch:
+    call do_touch
+    jmp .done
+.do_ls:
+    call do_ls
+    jmp .done
+.do_rm:
+    call do_rm
+    jmp .done
 .done:
     popa
     ret
