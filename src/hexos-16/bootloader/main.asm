@@ -67,7 +67,7 @@ print_hex:
 .done:
     ret
 
-loading_msg db "Loading hex16x kernel...", 0x0D, 0x0A, 0
+loading_msg db "Loading hexos kernel...", 0x0D, 0x0A, 0
 loaded_msg db "Kernel loaded, jumping...", 0x0D, 0x0A, 0
 error_msg db "Disk error! Code: ", 0
 
