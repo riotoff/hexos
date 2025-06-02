@@ -5,7 +5,7 @@ touch_cmd db "touch", 0
 do_touch:
     pusha
     mov si, input_buffer
-    add si, 6 
+    add si, 6
 
     cmp byte [si], 0
     je .missing_arg
