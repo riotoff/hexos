@@ -9,4 +9,4 @@
 %include "src/hexos/16/kernel/core/dbc/ls.asm"
 %include "src/hexos/16/kernel/core/dbc/rm.asm"
 %include "src/hexos/16/kernel/core/dbc/echo.asm"
-%include "src/hexos/16/kernel/core/dbc/exec.asm"
+%include "src/hexos/16/kernel/core/dbc/cat.asm"
