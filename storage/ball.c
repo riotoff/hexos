@@ -32,6 +32,22 @@ int build_dir() {
             perror("  Reason");
             return 1;
         }
+    if (access("build/hexos/", F_OK) == -1) {
+        print_colored("ball", "Creating directory: ", "build/hexos/");
+	printf("\n");
+        if (mkdir("build/hexos/", 0777) == -1) {
+            printf("%s[ERROR]%s Failed to create build/hexos/ directory\n", GRAY, RESET);
+            perror("  Reason");
+            return 1;
+        }
+    if (access("build/vm/", F_OK) == -1) {
+        print_colored("ball", "Creating directory: ", "build/vm/");
+	printf("\n");
+        if (mkdir("build/vm/", 0777) == -1) {
+            printf("%s[ERROR]%s Failed to create build/vm/ directory\n", GRAY, RESET);
+            perror("  Reason");
+            return 1;
+        }
     }
 }
 
@@ -42,7 +58,7 @@ int hexos16() {
     printf("Building hexOS-16...\n");
 
     if (access("build/hexos-16/", F_OK) == -1) {
-        print_colored("ball", "Creating directory: ", "build/hexos-16/");
+        print_colored("ball", "Creating directory: ", "build/hexos/16/");
         if (mkdir("build/hexos-16/", 0777) == -1) {
             printf("%s[ERROR]%s Failed to create build/hexos-16/ directory\n", GRAY, RESET);
             perror("  Reason");
@@ -50,20 +66,20 @@ int hexos16() {
         }
     }
 
-    execute_command("Assembling: ", "src/hexos-16/bootloader/main.asm", 
-                  "nasm -f bin src/hexos-16/bootloader/main.asm -o build/hexos-16/bootloader.bin");
+    execute_command("Assembling: ", "src/hexos/16/bootloader/main.asm", 
+                  "nasm -f bin src/hexos/16/bootloader/main.asm -o build/hexos/16/bootloader.bin");
     
-    execute_command("Assembling: ", "src/hexos-16/kernel/main.asm", 
-                  "nasm -f bin src/hexos-16/kernel/main.asm -o build/hexos-16/kernel.bin");
+    execute_command("Assembling: ", "src/hexos/16/kernel/main.asm", 
+                  "nasm -f bin src/hexos/16/kernel/main.asm -o build/hexos/16/kernel.bin");
 
-    execute_command("Creating disk image: ", "build/hexos-16/hexos.img", 
-                  "dd if=/dev/zero of=build/hexos-16/hexos.img bs=512 count=2880 2>/dev/null");
+    execute_command("Creating disk image: ", "build/hexos/16/hexos.img", 
+                  "dd if=/dev/zero of=build/hexos/16/hexos.img bs=512 count=2880 2>/dev/null");
 
-    execute_command("Writing bootloader: ", "build/hexos-16/bootloader.bin", 
-                  "dd if=build/hexos-16/bootloader.bin of=build/hexos-16/hexos.img conv=notrunc 2>/dev/null");
+    execute_command("Writing bootloader: ", "build/hexos/16/bootloader.bin", 
+                  "dd if=build/hexos/16/bootloader.bin of=build/hexos/16/hexos.img conv=notrunc 2>/dev/null");
 
-    execute_command("Writing kernel: ", "build/hexos-16/kernel.bin", 
-                  "dd if=build/hexos-16/kernel.bin of=build/hexos-16/hexos.img bs=512 seek=1 conv=notrunc 2>/dev/null");
+    execute_command("Writing kernel: ", "build/hexos/16/kernel.bin", 
+                  "dd if=build/hexos/16/kernel.bin of=build/hexos/16/hexos.img bs=512 seek=1 conv=notrunc 2>/dev/null");
 }
 
 //int hexos32() {
