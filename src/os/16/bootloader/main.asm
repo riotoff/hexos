@@ -1,4 +1,4 @@
-; hex16x/src/bootloader.asm
+; hexos/src/os/16/bootloader.asm
 
 [BITS 16]
 [ORG 0x7C00]
