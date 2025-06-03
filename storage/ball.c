@@ -35,6 +35,9 @@ int build_dir() {
     }
 }
 
+//int vm() {
+//}
+
 int hexos16() {
     printf("Building hexOS-16...\n");
 
@@ -74,6 +77,7 @@ int main() {
     printf("%sStarting build process...%s\n\n", GREEN, RESET);
     
     build_dir();
+//    vm();
     hexos16();
 //    hexos32();
 //    hexos64();
