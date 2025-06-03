@@ -1,4 +1,4 @@
-; hexos/src/hexos/16/kernel/core/dbc/help.asm
+; hexos/src/os/16/kernel/core/dbc/help.asm
 
 help_cmd db "help", 0
 
