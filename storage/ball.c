@@ -1,4 +1,4 @@
-// hexos builder
+// project compiler
 
 #include <stdio.h>
 #include <stdlib.h>
