@@ -3,8 +3,9 @@
 ### hexOS-16:
 - Hard-drive stylic bootloader ; DONE
 - Basic kernel with keyboard drivers ; DONE
-- Filesystem ; HALF PROCESS
+- hexFS (filesystem) ; IN PROGRESS
 - Colorized text ; SOON
+- hexGPU (graphics) ; SOON
 
 ### hexOS-32:
 - SOON
