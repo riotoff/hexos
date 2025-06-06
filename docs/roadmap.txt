@@ -1,0 +1,16 @@
+# here is roadmap of hexos project:
+
+### hexOS-16:
+- Hard-drive stylic bootloader ; DONE
+- Basic kernel with keyboard drivers ; DONE
+- Filesystem ; HALF PROCESS
+- Colorized text ; SOON
+
+### hexOS-32:
+- SOON
+
+### hexOS-64:
+- SOON
+
+### VM:
+- SOON
