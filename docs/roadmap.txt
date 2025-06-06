@@ -1,4 +1,4 @@
-# here is roadmap of hexos project:
+# roadmap of hexos project:
 
 ### hexOS-16:
 - Hard-drive stylic bootloader ; DONE
