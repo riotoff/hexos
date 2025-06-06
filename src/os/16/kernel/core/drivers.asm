@@ -74,6 +74,7 @@ read_line:
     mov al, 0x08
     int 0x10
     jmp .input_loop
+    ; todo :: fix for no-graphic virtual machine
 
 .enter_pressed:
     mov byte [di], 0
