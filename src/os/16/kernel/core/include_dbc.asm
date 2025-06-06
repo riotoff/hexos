@@ -10,3 +10,5 @@
 %include "src/os/16/kernel/core/dbc/rm.asm"
 %include "src/os/16/kernel/core/dbc/echo.asm"
 %include "src/os/16/kernel/core/dbc/cat.asm"
+%include "src/os/16/kernel/core/dbc/mkdir.asm"
+%include "src/os/16/kernel/core/dbc/cd.asm"
