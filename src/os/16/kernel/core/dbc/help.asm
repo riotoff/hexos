@@ -13,6 +13,8 @@ help_ls db "  ls - Look at files list", 0x0D, 0x0A, 0
 help_rm db "  rm - Remove file", 0x0D, 0x0A, 0
 help_echo db "  echo - Echo your words or input it into file (soon)", 0x0D, 0x0A, 0
 help_cat db "  сat - View file contents (soon)", 0x0D, 0x0A, 0
+help_mkdir db "  mkdir - Create new directory (soon)", 0x0D, 0x0A, 0
+help_cd db "  cd - Change directory (soon)", 0x0D, 0x0A, 0
 
 show_help:
     pusha
@@ -37,6 +39,10 @@ show_help:
     mov si, help_echo
     call print_string
     mov si, help_cat
+    call print_string
+    mov si, help_mkdir
+    call print_string
+    mov si, help_cd
     call print_string
     popa
     ret
