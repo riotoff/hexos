@@ -16,13 +16,55 @@ main_loop:
 
 print_string:
     pusha
+    mov ah, 0x0E
+    xor bh, bh
 .print_loop:
     lodsb
     test al, al
     jz .done
-    mov ah, 0x0E
+
+    cmp al, 0x0D
+    je .handle_cr
+    cmp al, 0x0A
+    je .handle_lf
+
+    test bl, bl
+    jz .default_print
+
+    pusha
+    mov ah, 0x09
+    mov bh, 0
+    mov cx, 1
+    int 0x10
+    mov ah, 0x03
+    int 0x10
+    inc dl
+    mov ah, 0x02
+    int 0x10
+    popa
+    jmp .print_loop
+
+.default_print:
     int 0x10
     jmp .print_loop
+
+.handle_cr:
+    mov ah, 0x03
+    int 0x10
+    mov dl, 0
+    mov ah, 0x02
+    int 0x10
+    jmp .print_loop
+
+.handle_lf:
+    mov ah, 0x03
+    int 0x10
+    inc dh
+    mov dl, 0
+    mov ah, 0x02
+    int 0x10
+    jmp .print_loop
+
 .done:
     popa
     ret
