@@ -61,6 +61,7 @@ process_command:
     jc .do_rm
 
     mov si, unknown_cmd
+    mov bl, 0x04
     call print_string
     mov si, available_cmds2
     call print_string
