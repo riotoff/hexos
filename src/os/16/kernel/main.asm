@@ -12,10 +12,13 @@ start:
 
     call clear_screen
     mov si, welcome_msg
+    mov bl, 0x02
     call print_string
 
     mov si, available_cmds
     call print_string
+
+    xor bl, bl
 
 %include "src/os/16/kernel/core/drivers.asm"
 %include "src/os/16/kernel/core/handlers.asm"
