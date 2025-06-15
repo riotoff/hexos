@@ -7,6 +7,7 @@
 - hexFS (filesystem) ; IN PROGRESS
 - hexGPU (graphics) ; SOON
 - POSIX (compatibility with other systems) ; SOON
+- Setup method ; SOON
 
 ### hexOS-32:
 - SOON
