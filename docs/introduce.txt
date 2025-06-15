@@ -1,8 +1,8 @@
-hello. we got hex operating systems with different bit depths.
+there are hex operating systems with different bit depths.
 
 there are:
 hexOS-16
 hexOS-32
 hexOS-64
 
-why? hex project made for testing netwide assembly's bit depths and other IT-sciences.
+why? hex project made for testing netwide assembly, but mostly for coding in it with most pretty method.
