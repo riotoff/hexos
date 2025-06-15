@@ -20,7 +20,7 @@ start:
 
     xor bl, bl
 
-%include "src/16/kernel/core/drivers.asm"
-%include "src/16/kernel/core/handlers.asm"
-%include "src/16/kernel/core/sbin/include.asm"
-%include "src/16/kernel/core/fsys.asm"
+%include "src/16/kernel/util/drivers.asm"
+%include "src/16/kernel/util/handlers.asm"
+%include "src/16/kernel/sbin/include.asm"
+%include "src/16/kernel/util/fsys.asm"
