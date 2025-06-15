@@ -1,3 +1,3 @@
-; hexos/src/os/16/kernel/core/dbc/echo.asm
+; hexos/src/16/kernel/core/dbc/echo.asm
 
 ; soon
