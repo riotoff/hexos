@@ -1,3 +1,3 @@
-; hexos/src/16/kernel/core/sbin/list/mkdir.asm
+; hexos/src/16/kernel/sbin/list/mkdir.asm
 
 ; soon
