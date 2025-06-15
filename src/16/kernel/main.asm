@@ -22,5 +22,5 @@ start:
 
 %include "src/16/kernel/core/drivers.asm"
 %include "src/16/kernel/core/handlers.asm"
-%include "src/16/kernel/core/include_dbc.asm"
+%include "src/16/kernel/core/sbin/include.asm"
 %include "src/16/kernel/core/fsys.asm"
