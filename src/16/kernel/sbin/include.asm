@@ -1,7 +1,7 @@
 ; hexos/src/16/kernel/sbin/include.asm
 
 %include "src/16/kernel/sbin/list/clear.asm"
-%include "src/16/kernele/sbin/list/exit.asm"
+%include "src/16/kernel/sbin/list/exit.asm"
 %include "src/16/kernel/sbin/list/help.asm"
 %include "src/16/kernel/sbin/list/hexfetch.asm"
 %include "src/16/kernel/sbin/list/panic.asm"
