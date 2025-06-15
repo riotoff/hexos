@@ -1,4 +1,4 @@
-; hexos/src/os/16/kernel/core/dbc/touch.asm
+; hexos/src/16/kernel/core/dbc/touch.asm
 
 touch_cmd db "touch", 0
 
