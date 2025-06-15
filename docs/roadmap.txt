@@ -6,6 +6,7 @@
 - Colorized text ; DONE
 - hexFS (filesystem) ; IN PROGRESS
 - hexGPU (graphics) ; SOON
+- POSIX (compatibility with other systems) ; SOON
 
 ### hexOS-32:
 - SOON
