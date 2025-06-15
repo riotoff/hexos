@@ -1,4 +1,4 @@
-; hexos/src/os/16/kernel/core/fsys.asm
+; hexos/src/16/kernel/core/fsys.asm
 
 FILE_TABLE equ 0x5000
 FILE_DATA equ 0x6000
