@@ -49,9 +49,9 @@ int hexos16() {
     printf("\n%sBuilding hexOS-16...%s\n", WHITE, RESET);
 
     if (access("build/16/", F_OK) == -1) {
-        print_colored(CYAN, "ball", "Creating directory:", "build/os/16/");
-        if (mkdir("build/os/16/", 0777) == -1) {
-            printf("%s[ERROR]%s Failed to create build/os/16/ directory\n", LIGHT_GRAY, RESET);
+        print_colored(CYAN, "ball", "Creating directory:", "build/16/");
+        if (mkdir("build/16/", 0777) == -1) {
+            printf("%s[ERROR]%s Failed to create build/16/ directory\n", LIGHT_GRAY, RESET);
             perror("Reason:");
             return 1;
         }
