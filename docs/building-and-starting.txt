@@ -1,0 +1,9 @@
+to build hexos, you need to enter these commands :
+$ gcc -o ball storage/ball.c                                                      # compile ball
+$ ./ball                                                                          # use it
+$ cd build/NN                                                                     # go into directory with model you need (enter 16, 32 or 64 instead of NN)
+
+to run hexos, you need to enter this command :
+$ qemu-system-x86 -drive file=disk.img,format=raw                                 # launch disk in qemu (add "--nographic" key for cli version)
+
+* At this moment, hexos can be runned only on flash usb or by using emulator due that hexos can not be installed, it is already working, so we will work at installator to make this os not pseudo (lol)
