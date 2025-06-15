@@ -1,4 +1,4 @@
-; hexos/src/os/16/kernel/main.asm
+; hexos/src/16/kernel/main.asm
 
 [BITS 16]
 [ORG 0x0000]
@@ -20,7 +20,7 @@ start:
 
     xor bl, bl
 
-%include "src/os/16/kernel/core/drivers.asm"
-%include "src/os/16/kernel/core/handlers.asm"
-%include "src/os/16/kernel/core/include_dbc.asm"
-%include "src/os/16/kernel/core/fsys.asm"
+%include "src/16/kernel/core/drivers.asm"
+%include "src/16/kernel/core/handlers.asm"
+%include "src/16/kernel/core/include_dbc.asm"
+%include "src/16/kernel/core/fsys.asm"
