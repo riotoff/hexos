@@ -61,7 +61,7 @@ int hexos16() {
                     "nasm -f bin src/16/bootloader/main.asm -o build/16/bootloader.bin");
 
     execute_command("Assembling:", " src/16/kernel/main.asm",
-                    "nasm -f bin srcs/16/kernel/main.asm -o build/16/kernel.bin");
+                    "nasm -f bin src/16/kernel/main.asm -o build/16/kernel.bin");
 
     execute_command("Creating disk image:", " builds/16/hexos.img",
                     "dd if=/dev/zero of=build/16/disk.img bs=512 count=2880 2>/dev/null");
