@@ -1,4 +1,4 @@
-; hexos/src/os/16/kernel/core/dbc/rm.asm
+; hexos/src/16/kernel/core/dbc/rm.asm
 
 rm_cmd db "rm", 0
 
