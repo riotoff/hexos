@@ -1,9 +1,9 @@
-; hexos/src/16/kernel/core/sbin/list/hexfetch.asm
+; hexos/src/16/kernel/sbin/list/hexfetch.asm
 
 hexfetch_cmd db "hexfetch", 0
 
-hexfetch_title db "    #   #     hexfetch", 0x0D, 0x0A, 0
-hexfetch_separator db "  ########    --------", 0x0D, 0x0A, 0
+hexfetch_title db "    #   #     root@hexos", 0x0D, 0x0A, 0
+hexfetch_separator db "  ########    ----------", 0x0D, 0x0A, 0
 hexfetch_host db "   #   #      Host: ?", 0x0D, 0x0A, 0
 hexfetch_os db " ########     OS: HexOS 16-bit", 0x0D, 0x0A, 0
 hexfetch_cpuu db "  #   #       CPU: ?", 0x0D, 0x0A, 0
