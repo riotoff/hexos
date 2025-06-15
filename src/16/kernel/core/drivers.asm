@@ -1,4 +1,4 @@
-; hexos/src/os/16/kernel/core/drivers.asm
+; hexos/src/16/kernel/core/drivers.asm
 
 main_loop:
     mov si, prompt
