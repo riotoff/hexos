@@ -1,4 +1,4 @@
-; hexos/src/16/kernel/core/sbin/list/ls.asm
+; hexos/src/16/kernel/sbin/list/ls.asm
 
 ls_cmd db "ls", 0
 
