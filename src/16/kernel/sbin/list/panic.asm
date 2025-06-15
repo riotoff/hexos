@@ -1,4 +1,4 @@
-; hexos/src/16/kernel/core/sbin/list/panic.asm
+; hexos/src/16/kernel/sbin/list/panic.asm
 
 panic_cmd db "panic", 0
 panic_msg db 0x0D, 0x0A, "Kernel Panic!", 0x0D, 0x0A, 0
