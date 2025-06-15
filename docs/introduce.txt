@@ -5,4 +5,5 @@ hexOS-16
 hexOS-32
 hexOS-64
 
-why? hex project made for testing netwide assembly, but mostly for coding in it with most pretty method.
+we made hex project to show people real netwide assembly;
+but basically hexos created for the simplest method of working in the field of IT sciences.
