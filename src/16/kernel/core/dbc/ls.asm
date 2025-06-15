@@ -1,4 +1,4 @@
-; hexos/src/os/16/kernel/core/dbc/ls.asm
+; hexos/src/16/kernel/core/dbc/ls.asm
 
 ls_cmd db "ls", 0
 
