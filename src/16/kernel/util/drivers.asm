@@ -154,3 +154,5 @@ strcmp:
 .exit:
     popa
     ret
+
+; Need to patch due to broken screen limits (63x25 or something)
