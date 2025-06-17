@@ -2,7 +2,7 @@
 
 ### hexOS-16:
 - Hard-drive stylic bootloader ; DONE
-- Basic kernel with keyboard drivers and commands ; DONE (has bugs, most of them are fixed)
+- Basic kernel with keyboard drivers and commands ; DONE (need to patch)
 - Colorized text ; DONE
 - hexFS (filesystem) ; IN PROGRESS
 - hexGPU (graphics) ; SOON
