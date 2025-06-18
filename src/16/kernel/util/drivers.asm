@@ -36,9 +36,19 @@ print_string:
     mov bh, 0
     mov cx, 1
     int 0x10
+    
     mov ah, 0x03
     int 0x10
     inc dl
+    cmp dl, 80
+    jb .update_cursor
+    xor dl, dl
+    inc dh
+    cmp dh, 25
+    jb .update_cursor
+    call scroll_screen
+    mov dh, 24
+.update_cursor:
     mov ah, 0x02
     int 0x10
     popa
@@ -60,6 +70,11 @@ print_string:
     mov ah, 0x03
     int 0x10
     inc dh
+    cmp dh, 25
+    jb .no_scroll
+    call scroll_screen
+    mov dh, 24
+.no_scroll:
     mov dl, 0
     mov ah, 0x02
     int 0x10
@@ -69,19 +84,25 @@ print_string:
     popa
     ret
 
+scroll_screen:
+    pusha
+    mov ah, 0x06
+    mov al, 1
+    mov bh, 0x07
+    mov ch, 0
+    mov cl, 0
+    mov dh, 24
+    mov dl, 79
+    int 0x10
+    popa
+    ret
+
 read_line:
     pusha
     xor cx, cx
 .input_loop:
     mov ah, 0x00
     int 0x16
-    
-    cmp al, 'A'
-    jb .not_upper
-    cmp al, 'Z'
-    ja .not_upper
-    add al, 0x20
-.not_upper:
     
     cmp al, 0x0D
     je .enter_pressed
@@ -109,7 +130,6 @@ read_line:
     jz .input_loop
     dec di
     dec cx
-    mov byte [di], 0
     mov ah, 0x0E
     mov al, 0x08
     int 0x10
@@ -154,5 +174,3 @@ strcmp:
 .exit:
     popa
     ret
-
-; Need to patch due to broken screen limits (63x25 or something)
